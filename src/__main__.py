@@ -1,6 +1,6 @@
 import logging
 
-from src.routes import routes
+from .routes import routes
 
 from loafer.managers import LoaferManager
 

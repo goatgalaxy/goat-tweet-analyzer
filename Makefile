@@ -1,2 +1,2 @@
 run:
-	pipenv run python src/__main__.py
+	pipenv run python -m src
