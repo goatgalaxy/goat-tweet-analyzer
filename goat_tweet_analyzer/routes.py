@@ -1,10 +1,10 @@
 from loafer.ext.aws.routes import SNSQueueRoute
 
-from src.handlers import ProcessTweetsHandler
+from goat_tweet_analyzer.handlers import ProcessTweetsHandler
 
-from src.config import settings
+from goat_tweet_analyzer.config import settings
 
-from src.translators import GoatMessagesTranslator
+from goat_tweet_analyzer.translators import GoatMessagesTranslator
 
 provider_options = {
     "endpoint_url": settings.AWS_ENDPOINT_URL,
