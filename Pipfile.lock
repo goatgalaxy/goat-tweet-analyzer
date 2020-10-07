@@ -1,11 +1,11 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "8f61e37ea62de62c955b59a376aa668a1602ad9c0f6a448c4e745483e3395c44"
+            "sha256": "4bba271a97ed098bc6d81219b4eae24e21e7021187d446a164b5ce3b13a0cab5"
         },
         "pipfile-spec": 6,
         "requires": {
-            "python_version": "3.8"
+            "python_version": "3.8.6"
         },
         "sources": [
             {
@@ -21,10 +21,10 @@
                 "boto3"
             ],
             "hashes": [
-                "sha256:3e63bda6186b62c2f626bfa6989b3f17bb18f7d05466ce70638468f7928edb30",
-                "sha256:a2aa12e751407412c3ed4e9d953cb1130876e546348504d353900b6f3e3a3e43"
+                "sha256:457549acaf3a3d10ad8a6256ec5b791ea885e4d2fa11783d22bb8f411a058141",
+                "sha256:54b23e3ac82955caa90ea320301255a4c738ff0a827599f57129e3f1d883c9ba"
             ],
-            "version": "==1.1.1"
+            "version": "==1.1.2"
         },
         "aiohttp": {
             "hashes": [
