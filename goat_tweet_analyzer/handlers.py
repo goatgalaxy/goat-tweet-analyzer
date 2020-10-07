@@ -2,6 +2,7 @@ import logging
 
 from goat_tweet_analyzer.analyzer import getAnalyzer
 
+
 logging.basicConfig(level = logging.INFO)
 
 logger = logging.getLogger(__name__)

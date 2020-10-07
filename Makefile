@@ -10,4 +10,3 @@ run-docker:
 deploy:
 	@make build-image
 	@make run-docker
-
