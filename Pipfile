@@ -12,7 +12,6 @@ loafer = "*"
 prettyconf = "*"
 requests = "*"
 vadersentiment = "*"
-client-core = "*"
 
 [requires]
 python_version = "3.8"
