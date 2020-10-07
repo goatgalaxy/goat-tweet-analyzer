@@ -1,7 +1,7 @@
 import logging
 
-from goat_tweet_analyzer.analyzer import getAnalyzer
-
+from goat_tweet_analyzer.analyzer import analyzer
+from goat_tweet_analyzer.clients import internal_api_client
 
 logging.basicConfig(level = logging.INFO)
 
@@ -9,8 +9,7 @@ logger = logging.getLogger(__name__)
 
 
 class ProcessTweetsHandler:
-    def get_sentiment_value(message):
-        analyzer = getAnalyzer()
+    def get_sentiment_value(self, message):
         result = analyzer.polarity_scores(message)
         return result["compound"]
 
