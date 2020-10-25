@@ -12,7 +12,7 @@ class InternalTwitterApiClient:
             headers = {"Content-Type": "application/json"}
         url = f"{self.base_url}/tweet/{pk}"
         data = json.dumps(body)
-        requests.put(url, data=data, headers=headers)
+        return requests.put(url, data=data, headers=headers)
 
 internal_api_client = InternalTwitterApiClient(settings.API_URL)
 

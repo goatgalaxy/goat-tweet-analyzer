@@ -1,0 +1,39 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: goat-tweet-analyzer
+spec:
+  selector:
+    app: goat-twitter-analyzer
+    tier: backend
+  ports:
+  - protocol: "TCP"
+    port: 4100
+    targetPort: 4100
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment 
+metadata:
+  name: goat-tweet-analyzer
+  namespace: default 
+  labels:
+    app: goat-tweet-analyzer
+spec:
+  replicas: 20
+  selector:
+    matchLabels:
+      app: goat-tweet-analyzer
+      tier: backend
+      track: stable
+  template:
+    metadata:
+      labels:
+        app: goat-tweet-analyzer
+        tier: backend
+        track: stable
+    spec:
+      containers:
+      - name: goat-tweet-analyzer 
+        image: localhost:5000/goat-tweet-analyzer 
+
