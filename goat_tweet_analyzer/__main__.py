@@ -10,3 +10,4 @@ logger.info("STARTED APLICATION - GOAT TWEETER ANALYZER")
 
 manager = LoaferManager(routes=routes)
 manager.run()
+
